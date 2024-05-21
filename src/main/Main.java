@@ -4,16 +4,7 @@
  */
 package main;
 
-import com.mysql.jdbc.Connection;
-import connection.MySQLConnection;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-/**
- *
- * @author edwin
- */
 public class Main {
 
     /**
