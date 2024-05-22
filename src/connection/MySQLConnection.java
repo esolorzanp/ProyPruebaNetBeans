@@ -5,11 +5,12 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class MySQLConnection {
+
     private static Connection con;
     private static final String puerto = "3306";
     private static final String nomservidor = "localhost";
     private static final String db = "labpets2";
-    private static final String driver = "com.mysql.jdbc.Driver";
+    private static final String driver = "com.mysql.cj.jdbc.Driver";
     private static final String user = "root";
     private static final String pass = "";
     private static final String url = "jdbc:mysql://" + nomservidor + ":" + puerto + "/" + db;
