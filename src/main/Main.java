@@ -5,9 +5,13 @@
 package main;
 
 import controller.EspecieCtrl;
+import controller.RazaCtrl;
 import dao.EspecieDao;
+import dao.RazaDao;
 import model.Especie;
+import model.Raza;
 import view.EspecieFrm;
+import view.RazaFrm;
 
 
 public class Main {
@@ -25,6 +29,18 @@ public class Main {
         EspecieFrm vista = new EspecieFrm();
         EspecieCtrl control = new EspecieCtrl(model, dao, vista);
         control.iniciar();
+        
+        
+        
+        
+        Raza objModel = new Raza();
+        RazaDao objDao = new RazaDao();
+        RazaFrm objVista = new RazaFrm();
+        RazaCtrl objController = new RazaCtrl(objModel, objDao, objVista);
+
+        objController.Iniciar();
+        objVista.setVisible(true);
+    
     }
 
 }
