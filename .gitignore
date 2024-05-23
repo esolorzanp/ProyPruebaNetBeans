@@ -1,1 +1,8 @@
 /nbproject/private/
+
+# Extensiones ignorados
+*.class
+
+# Carpetas o directorios ignorados
+build/
+test/
